@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Beautiful Clock Radio</title>
+<style type="text/css">
+            .title {
+                font-size : 16px;
+            }
+            .subtitle {
+                font-size : 16px;
+            }
+            a:link {
+                color : #AB5310;
+                text-decoration : none;
+            }
+            a:visited {
+                text-decoration : none;
+                color : #AB5310;
+            }
+            a:hover {
+                text-decoration : none;
+                color : #333;
+            }
+            a:active {
+                text-decoration : none;
+            }
+
+            #signupForm label.error {
+                margin-left: 10px;
+                font-size: 20px;
+            }</style>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="html5-video/jquery.hvideo.js" type="text/javascript" charset="utf-8"></script>
+<script src="html5-video/hvideo-debug.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" href="html5-video/hvideo.css" type="text/css" media="screen" title="HTML5 video base style" charset="utf-8" />
+<script type="text/javascript" charset="utf-8">
+		function setupVideo(){
+			$('#test1').find('controls').show();
+			$('#test1').hvideo({
+				//autoresize: true
+			});
+			// Using hvideo-debug.js we can enable logging alot of stuff to console:
+			//hvideo.debug('#test1');
+
+
+			var rootq = $('#test1');
+			var vq = rootq.find('video');
+			vq.bind('ended', function(ev){
+				$('#giveaway-area').show('slow');
+			});
+		}
+
+		setTimeout(setupVideo, 500);
+
+		$().ready(function() {
+			$('#signupForm').validate({
+				rules: {
+					Email: {
+						required: true,
+						email: true
+					}
+				},
+				messages: {
+					Email: "*"
+				}
+			});
+		});
+
+	</script>
+</head>
+<body><!-- overlayed element -->
+<div class="apple_overlay" id="overlay"><!-- the external content is loaded inside this tag -->
+<div class="contentWrap"> </div></div>
+<div class="container">
+<div class="top">
+<div class="sidebar">
+<p><a href="index.html"><img src="images/logo.png" alt="logo" width="195" height="129" border="0" /></a></p></div>
+<div class="giveaway_right">
+<div id="test1" class="hvideo" style="margin-top: -54px">
+<p style="position: relative; top: 180px; left: 520px; width: 100px">Play the Video and enter to get Beautiful Clock Radio for free!</p>
+<controls style="display: none">
+<button class="play-pause paused" title="Toggle playback"></button>
+<extended>
+<bar class="position" title="Current position">
+<p class="meta">0:00</p></bar>
+<bar class="total">
+<p class="meta" title="Total length">0:00</p></bar>
+<bar class="buffered"></bar>
+<bar class="unbuffered"></bar>
+<button class="mute-audio" title="Mute/unmute audio"></button><!-- Zoom not used, as fullscreen gives access to standard iPad buttons. -->
+<button class="zoom" title="Zoom in/out" style="display: none"></button></extended></controls>
+<video width="500" height="281" poster="video/Clock_radio_med.png" autobuffer="">
+<source src="video/Clock_radio_med.mp4" type="video/mp4">
+<source src="video/Clock_radio_med.ogv" type="video/ogg">
+<div class="fallback">
+                                You must have an HTML5 capable browser.</div></video></div>
+<div id="giveaway-area" style="display: none">
+<form id="signupForm" method="post" action="cgi-bin/save_comment.cgi"><input type="text" title="Name" name="Name" id="Name" value="Name" onfocus="if(this.value=='Name'){this.value='';this.style.color='#000';}else{this.select();}" onblur="if(this.value==''){this.value='Name';this.style.color='#b3b3b3';}" style="color: #b3b3b3" /><input type="text" name="Email" id="Email" title="Email" value="Email" onfocus="if(this.value=='Email'){this.value='';this.style.color='#000';}else{this.select();}" onblur="if(this.value==''){this.value='Email';this.style.color='#b3b3b3';}" style="color: #b3b3b3" /><textarea name="Message" rows="20" cols="20" id="Message" title="Message" value="Why do you want this app?" onfocus="if(this.value=='Why do you want this app?'){this.value='';this.style.color='#000';}else{this.select();}" onblur="if(this.value==''){this.value='Why do you want this app?';this.style.color='#b3b3b3';}" style="color: #b3b3b3">Why do you want this app?</textarea><br />
+<input type="submit" name="submit" value="Submit" class="submit-button" /></form></div></div></div></div>
+</body>
+</html>

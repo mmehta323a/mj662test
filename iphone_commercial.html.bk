@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<title>Beautiful Clock Radio</title>
+<link href="contact/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.title {
+	font-size: 16px;
+}
+.subtitle {
+	font-size: 16px;
+}
+a:link {
+	color: #AB5310;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #AB5310;
+}
+a:hover {
+	text-decoration: none;
+	color: #333;
+}
+a:active {
+	text-decoration: none;
+}
+
+a.imgbord:link {color: #C5C5C5;}
+a.imgbord:active {color: #C5C5C5;}
+a.imgbord:visited {color: #C5C5C5;}
+a.imgbord:hover {color: #00FFDE;}
+
+.youtube-player
+{
+	float: left;
+	padding: 10px;
+}</style>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/JavaScript">
+<!--
+
+// Email Validation. Written by PerlScriptsJavaScripts.com
+
+function check_email(e) {
+ok = "1234567890qwertyuiop[]asdfghjklzxcvbnm.@-_QWERTYUIOPASDFGHJKLZXCVBNM";
+
+for(i=0; i < e.length ;i++){
+if(ok.indexOf(e.charAt(i))<0){
+return (false);
+}	
+}
+
+if (document.images) {
+re = /(@.*@)|(\.\.)|(^\.)|(^@)|(@$)|(\.$)|(@\.)/;
+re_two = /^.+\@(\[?)[a-zA-Z0-9\-\.]+\.([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+if (!e.match(re) && e.match(re_two)) {
+return (-1);		
+}
+
+}
+
+}
+
+// -->
+</script>
+<script type="text/JavaScript">
+<!--
+
+function check_form(f) { // f is the form (passed using the this keyword)
+if(f.name.value.length < 1){
+alert("You entered less than one character in the name field.");
+f.name.focus(); // put the prompt in the name field
+// if the browser is Netscape 6 or IE
+if(document.all || document.getElementByID){
+// change the color of text field
+f.name.style.background = "yellow";
+}
+// make sure the form is not submitted
+return false;
+}
+
+// check the first email address ( the exclamation means "not" )
+if(!check_email(f.email.value)){
+			document.getElementById("errorMessage").innerHTML = "Please provide a valid email address";
+			return false;
+
+f.Email.focus();
+// if the browser is Netscape 6 or IE
+if(document.all || document.getElementByID){
+// change the color of text field
+f.email.style.background = "yellow";
+}
+// make sure the form is not submitted
+return false;
+}
+}
+
+// -->
+</script>
+<meta name="description" content="Beautiful Clock Radio for the iPad and iPhone" />
+<meta name="keywords" content="clock, radio, alarm, iPad, iPhone, app" />
+</head>
+<body> <!-- overlayed element -->
+<div class="apple_overlay" id="overlay"> <!-- the external content is loaded inside this tag -->
+<div class="contentWrap"></div> </div>
+<div class="container">
+<div class="top">
+<div class="sidebar">
+<p><img src="images/100Space.png" width="20" height="74" alt="space" border="0" /></p>
+<p><a href="index.html"><img alt="" src="images/logo.png" width="195" height="129" border="0" /></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="http://itunes.apple.com/us/artist/i-hate-my-clock-radio/id382749598" target="_new"><img src="images/App_Store_Badge_EN.png" width="285" height="99" alt="App Store link" longdesc="http://appstor%20link" /></a><br />
+<strong><br />
+</strong></p><br />
+<p>&nbsp;</p>
+<p>&nbsp;</p><!--
+<p><a href="mailto:support@beautifulclockradio.com">support@beautifulclockradio.com</a></p> -->
+<p><a href="demo.html"><img src="images/ipad-demo-button.png" alt="Youtube" width="273" height="152" border="0" /></a></p>
+<p>&nbsp;</p>
+<p><a href="iphone_demo.html"><img src="images/iphone-demo-button.png" alt="Youtube" width="273" height="152" border="0" /></a></p>
+<p>&nbsp;</p>
+<p><a href="iphone_commercial.html"><img src="images/iphone-commercial-button.png" alt="Youtube" width="273" height="152" border="0" /></a></p>
+<p>&nbsp;</p>
+<div id="contact-area"><font size="4"><span style="font-size: 16px"><strong>QUESTIONS/SUPPORT</strong></span></font></div>
+<div class="one"><br />
+<form action="contact/contactengine.php" method="post" onsubmit="return check_form(this)" style="padding: 8">
+<p><input type="text" title="name" name="name" id="name" value="Name" onfocus="if(this.value=='Name'){this.value='';this.style.color='#000';}else{this.select();}" onblur="if(this.value==''){this.value='Name';this.style.color='#3F3F3F';}" style="color: #3F3F3F; width: 250px; height: 20px" /></p>
+<p><input type="text" name="email" id="email" title="email" value="Email" onfocus="if(this.value=='Email'){this.value='';this.style.color='#000';}else{this.select();}" onblur="if(this.value==''){this.value='Email';this.style.color='#3F3F3F';}" style="color: #3F3F3F; width: 250px; height: 20px" /></p>
+<p><textarea name="Message" rows="20" cols="20" id="Message" title="Message" value="Message" onfocus="if(this.value=='Message'){this.value='';this.style.color='#000';}else{this.select();}" onblur="if(this.value==''){this.value='Message';this.style.color='#3F3F3F';}" style="color: #3F3F3F; width: 250px">Message</textarea></p>
+<p> Please <strong>double check your email address</strong> so we will be able to contact you</p>
+<p><span id="errorMessage" style="color: #f00"></span></p><input type="submit" name="submit" value="Submit" class="submit-button" />
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>YOU MIGHT ALSO LIKE</strong><a class="imgbord" href="http://dolphinalarmclock.com/"><img src="images/dolphinsalarmadwords.png" width="250" height="250" alt="Dolphin Alarm Clock" longdesc="http://dolphinalarmclock.com" border="4px" /></a> </p></form>
+<div style="clear: both"></div></div></div>
+<div class="slideshow">
+<div class="holder"><!--
+<div id="fadeshow1"></div> -->
+<p>&nbsp;</p><br />
+<iframe title="YouTube video player" class="youtube-player" type="text/html" width="660" height="396" wmode="transparent" src="http://www.youtube.com/embed/Iv8NRj-JroQ?rel=0" frameborder="0" "="" allowfullscreen="allowFullScreen"></iframe> <a href="index.html"> BACK TO SLIDESHOW </a></div> </div> </div>
+<div class="bottom">
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js#appId=163908207018239&amp;xfbml=1"></script>
+<fb:like href="www.beautifulclockradio.com" send="true" width="450" show_faces="true" action="like" font=""></fb:like><!-- Place this tag where you want the +1 button to render -->
+<g:plusone></g:plusone><!--  Place this tag after the last plusone tag -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<p class="title">MAIN FEATURES</p>
+<p class="title"><font size="3"><br />
+</font></p>
+<p class="subtitle"><strong>RADIO</strong></p>
+<p style="font-size: 16px"> Beautiful Clock Radio integrates the best internet radio (powered by  Shoutcast) with access to over 35,000 music, sports, talk and community  programmed stations from around the globe. The internet section has radio stations from around the world and  now a UK section. The application can play  music stored on your iPad, 1 of 13 soothing sounds to help you relax,  tune into the TWIT Network or any mp3 stream. All can be saved to one of  5 preset buttons.</p>
+<p class="subtitle"><strong>ANIMATED BACKGROUND</strong></p>
+<p style="font-size: 16px">The background changes to reflect the time of day. At 12pm the sun is  high and slowly sets to accurately reflect the sunset in your current  location. <br />
+
+At night the moon is shown in the correct phase. </p>
+<p class="subtitle"><strong>ALARM</strong></p>
+<p style="font-size: 16px">Beautiful Clock Radio features an innovative  easy to set alarm with a copy-written interface.  Simply touch the alarm face to set the time you want. Selecting the AM  or PM finalizes and sets the alarm. Wake up to any Radio or music station programed to one of the radio buttons.</p>
+<p class="subtitle"><strong>What is SHOUTcastTM Radio?</strong></p>
+<p class="subtitle"><img alt="" src="images/shoutcast.gif" width="139" height="39" /></p>
+<p style="font-size: 16px">The SHOUTcastTM Radio Directory is one of the largest directories of  professionally and community programmed online radio stations in the  world. Today SHOUTcastTM Radio features over 35,000 music, sports, talk  and community programmed stations from around the globe. You're sure to  find something you like on SHOUTcastTM Radio. </p>
+<p style="font-size: 16px">SHOUTcastTM Radio also provides audio broadcasting software tools for those who want to create a radio station. It permits anyone on the internet to broadcast audio from their computer to listeners across the Internet or any other IP</p>
+<p style="font-size: 16px">&nbsp;</p>
+<p style="font-size: 16px"><strong>SPOTIFY</strong>&nbsp;</p>
+<p style="font-size: 16px"><img src="images/spotify-core-logo.jpg" width="74" height="55" alt="Spotify Core Logo" /></p>
+<p style="font-size: 16px; color: #CCC">&quot;This product uses SPOTIFY CORE but is not endorsed, certified or otherwise approved in any way by Spotify. Spotify is the registered trade mark of the Spotify Group.&quot;</p></div></div>
+</body>
+</html>
